@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+
+<parameter name="browser" value="chrome"/>
+<parameter name="url" value="https://www.knowledgeware.in/final.html"/>
+<parameter name="pageOneTitle" value="Register page"/>
+<parameter name="user" value="Santosh"/>
+<parameter name="pass" value="P@ssw0rd@123"/>
+<parameter name="confPass" value="P@ssw0rd@123"/>
+<parameter name="pageTwoTitle" value="Reg2"/>
+<parameter name="firstName" value="Santosh"/>
+<parameter name="lastName" value="KOlhe"/>
+<parameter name="birthday" value="25"/>
+<parameter name="birthmonth" value="July"/>
+<parameter name="birthyear" value="1995"/>
+<parameter name="emailid" value="santosh@gmail.com"/>
+<parameter name="mobileNo" value="93254678990"/>
+<parameter name="gender" value="male"/>
+<parameter name="pageThreeTitle" value="Reg3"/>
+<parameter name="add" value="Chembur"/>
+<parameter name="city" value="Mumbai"/>
+<parameter name="pinCode" value="400071"/>
+<parameter name="stateName" value="Maharashtra"/>
+<parameter name="country" value="India"/>
+<parameter name="pageFourTitle" value="Reg4"/>
+<parameter name="hobby" value="Dancing"/>
+<parameter name="pageFiveTitle" value="Login page"/>
+<parameter name="pageLable" value="Welcome to Selenium Automation Testing"/>
+  <test name="Test" thread-count="5">
+    <classes>
+      <class name="knowledgeware_Page_Tests.Register_One_Page_XML_DataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
