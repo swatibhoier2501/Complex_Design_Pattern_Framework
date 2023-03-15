@@ -29,6 +29,13 @@ public class NursingDemoOne_Page_Locator {
 	public WebElement clickLogin(){
 	return login;
 	}
+//Added new link Employee Management
+@FindBy(xpath="//span[@class='text-light-blue']")
+	private WebElement empmanagement;
+	public WebElement getEmpolyeeManagement()
+	{
+		return empmanagement;
+	}
 
 	
 }
